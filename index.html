@@ -4,14 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Valentinstag Website</title>
-  <!-- Hinweis: Diese Datei stellt eine einfache Startseite bereit, damit GitHub Pages nicht nur den Repo-Namen anzeigt.
-       Falls du eigene CSS/JS-Dateien nutzt, bitte sicherstellen, dass Pfade RELATIV sind:
-       z.B. href="css/style.css" statt href="/css/style.css".
-       Wenn du möchtest, passe ich diese Datei an deinen Originalinhalt an oder entferne sie später. -->
+  <meta name="description" content="Valentinstag Website - funktionale Testseite">
+  <style>
+    :root{--bg:#fff8fb;--accent:#ff5c8a;--text:#333}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;padding:2rem;background:linear-gradient(180deg,var(--bg),#fff);color:var(--text)}
+    header{max-width:900px;margin:0 auto;padding:1rem 0}
+    .card{background:#fff;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.08);padding:2rem;max-width:900px;margin:1rem auto}
+    h1{color:var(--accent);margin:0 0 .5rem}
+    p{line-height:1.5}
+    pre{background:#f7f7f7;padding:1rem;border-radius:6px;overflow:auto}
+    footer{opacity:.8;font-size:.9rem;text-align:center;margin-top:1rem}
+    .ok{display:inline-block;background:linear-gradient(90deg,#eafff5,#f0fff6);color:#0a7; padding:.25rem .5rem;border-radius:6px;font-weight:600}
+  </style>
 </head>
 <body>
-  <h1>Valentinstag Website</h1>
-  <p>Wenn du den originalen Inhalt hier sehen möchtest, füge deine HTML/CSS/JS-Dateien ins Repository-Root oder in das <code>docs/</code>-Verzeichnis ein und verwende relative Pfade.</p>
-  <p>Tipp: Teste lokal mit <code>python -m http.server 8000</code> und öffne <code>http://localhost:8000</code>.</p>
+  <header>
+    <div class="card">
+      <h1>Valentinstag Website — Testseite</h1>
+      <p>Diese Seite ist selbständig und enthält keine externen Assets. Sie dient dazu sicherzustellen, dass GitHub Pages deine Seite korrekt anzeigt.</p>
+      <p>Wenn du deine volle Seite hier sehen möchtest, befolge bitte die Hinweise weiter unten zum Anpassen von Pfaden.</p>
+      <p><span class="ok">Status: Minimaler Inhalt installiert</span></p>
+
+      <h2>Was wurde geändert</h2>
+      <ul>
+        <li>Eine selbstenthaltende <code>index.html</code> wurde in den Root des Repos geschrieben.</li>
+        <li>Keine externen CSS/JS- oder Bildpfade werden benötigt — dadurch werden 404-Probleme vermieden.</li>
+      </ul>
+
+      <h2>Tipps, damit deine originale Seite funktioniert</h2>
+      <ol>
+        <li>Wenn deine Seite als Projektseite gehostet wird (URL enthält <code>/valentinstagwebsite/</code>), dürfen Dateipfade in HTML nicht mit einem führenden Schrägstrich beginnen. Verwende z. B.:
+          <pre>&lt;link rel="stylesheet" href="css/style.css"&gt;</pre>
+          statt <code>/css/style.css</code>.</li>
+        <li>Alternativ kannst du im &lt;head&gt; ein &lt;base&gt; setzen (beachte Nebenwirkungen):
+          <pre>&lt;base href="/valentinstagwebsite/"&gt;</pre>
+        </li>
+        <li>Achte auf Groß-/Kleinschreibung bei Dateinamen: <code>Images/pic.png</code> ≠ <code>images/pic.png</code>.</li>
+        <li>Prüfe in den Repository Settings → Pages, dass als Source der Branch <strong>main</strong> und Folder <strong>/ (root)</strong> eingestellt ist.</li>
+      </ol>
+
+      <h2>Wenn du möchtest, stelle ich deine originale Seite wieder her</h2>
+      <p>Schicke mir entweder die Dateien (z. B. <code>index.html</code>, <code>css/style.css</code>, <code>js/script.js</code>) oder kopiere hier den Inhalt deiner aktuellen <code>index.html</code>. Ich passe dann die Pfade an und pushe alles ins Repo, sodass die Seite korrekt angezeigt wird.</p>
+
+      <p class="footer-note">Teste lokal: Öffne das Repo-Root lokal im Terminal und starte einen kleinen Server:<br>
+        <code>python -m http.server 8000</code> — dann öffne <code>http://localhost:8000</code></p>
+
+    </div>
+  </header>
+  <footer>
+    <div style="max-width:900px;margin:0 auto">Wenn du willst, dass ich die originale Seite wiederherstelle, antworte mit "Bitte wiederherstellen" und füge deine ursprüngliche <code>index.html</code> hier ein.</div>
+  </footer>
 </body>
 </html>
